@@ -1,0 +1,56 @@
+name: Build ODT PDFs and Release
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install LibreOffice (no GUI) + base fonts
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            libreoffice-nogui libreoffice-writer-nogui \
+            fonts-dejavu fonts-liberation fonts-noto-core
+          libreoffice --version
+
+      - name: Install bundled fonts
+        run: |
+          mkdir -p ~/.local/share/fonts
+          cp -r fonts/* ~/.local/share/fonts/ || true
+          fc-cache -fv
+
+      - name: Convert ODT → PDF
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p output
+          shopt -s globstar nullglob
+          for f in **/*.odt; do
+            [[ "$f" == output/* ]] && continue
+            [[ "$(basename "$f")" == "letter-template.odt" ]] && continue
+            echo "Converting: $f"
+            libreoffice --headless --nologo --nofirststartwizard \
+              --convert-to pdf --outdir output "$f"
+          done
+          ls -lah output
+
+      - name: Publish PDFs to GitHub Release
+        uses: ncipollo/release-action@v1
+        with:
+          tag: latest
+          name: Latest CV PDFs
+          body: "Automated build of ODT → PDF."
+          artifacts: "output/*.pdf"
+          allowUpdates: true
+          replacesArtifacts: true
+          token: ${{ secrets.GITHUB_TOKEN }}
+          draft: false
+          prerelease: false
+          makeLatest: true
