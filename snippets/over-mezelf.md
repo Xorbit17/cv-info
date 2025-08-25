@@ -1,0 +1,10 @@
+# Over mezelf
+
+De beste manier om iets over mezelf te vertellen is om even te zeggen wat ik de laatste week heb gedaan.
+Ik heb bewust een tijdje vrij genomen tussen twee jobs om aan open source projecten te werken en om IT onderwerpen te studeren.
+Momenteel werk ik aan twee open source projecten; dat is een droom dat ik lang heb gekoesterd. Het eerste project heeft te maken met een AI-gedreven digitaal foto kader en dashboard. Ik heb dit project gebruikt om terug goed te worden in de programmeertaal python. Ik hou ervan dat er ook een 'hardware aspect' aan is want het e-ink digitaal foto frame vereist wat knutselwerk met een raspberry pi. Het tweede project is ook iets waar ik al lang over aan het nadenken was: een desktop editor voor het schrijven van fictie met AI tools (LLM gedreven). IK publiceer alles op [github](https://github.com/Xorbit17).
+
+Ik heb Burgelijker ingenieur gestudeerd om mijn grootmoeder trots te maken. Maar mijn passie ligt bij IT en het creëren van mooie, nuttige dingen. Al vanaf het vijfde leerjaar ben ik met IT projecten bezig. Omdat ik het graag doe ben ik uiteindelijk software developer geworden, maar ik vind machines en engineering ook nog steeds geweldig. Ondanks het feit dat ik nooit Computer Science heb gestudeerd is mijn ervarving equivalent aan een master niveau in dat werkveld. Maar ik kan terug grijpen naar het praktische met veel plezier.
+
+Ik heb een tijd in het ‘binnenland’ gewoond voor jobs in Gent, Brussel en Antwerpen. Maar voor persoonlijke redenen ben ik recent terug verhuisd naar Blankenberge waar ik geboren ben. Wat ik hoop is om een job te vinden in de streek en om me daar – opnieuw – te vestigen door een huis te kopen en een partner te zoeken. Jullie locatie, Roeselare, is geschikt. Na al mijn omzwervingen zoek ik een bedrijf waar ik vele jaren bij kan blijven.
+Ik heb tal van jaren gewerkt in de IT innovatie sector en ik heb een brede kennis. Als jullie iemand zoeken om te helpen vernieuwen op een manier dat technisch haalbaar is en tegelijk betaalbaar en realiseerbaar dan ben ik je man. 
